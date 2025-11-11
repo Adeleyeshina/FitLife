@@ -1,4 +1,7 @@
 import CenterTextHeader from "../../components/ui/CenterTextHeader"
+import DailyGoal from "./DailyGoal"
+import MealCategories from "./MealCategories"
+import MealPlan from "./MealPlan"
 
 
 const Meals = () => {
@@ -11,6 +14,9 @@ const Meals = () => {
                     headingRight="Right"
                     body=" Personalized meal plans with precise calorie and nutrient breakdowns"
                 />
+                <MealCategories />
+                <MealPlan />
+                <DailyGoal />
             </div>
         </div>
     )
