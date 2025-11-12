@@ -15,7 +15,7 @@ const NotFound = () => {
           404 - Page Not Found
         </h1>
         <p className="text-xl font-medium">
-          Sorry the page you're looking for does not exist or has been moved.
+          Sorry, the page you're looking for does not exist or has been moved.
         </p>
         <button className="bg-primary hover:bg-primary/87 text-white transition-colors duration-200 ease-in-out py-3 px-10 rounded-md font-medium cursor-pointer"
           onClick={() => navigate("/")}
