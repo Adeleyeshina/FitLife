@@ -11,8 +11,8 @@ const Stats = () => {
                             <div className="inline-flex items-center justify-center bg-primary/10 rounded-full p-4 mb-4">
                                 <stat.icon className="h-8 w-8 text-primary" />
                             </div>
-                            <div className="text-4xl font-bold text-foreground mb-2">{stat.value}</div>
-                            <div className="text-muted-foreground">{stat.label}</div>
+                            <p className="text-4xl font-bold text-foreground mb-2">{stat.value}</p>
+                            <p className="text-muted-foreground">{stat.label}</p>
                         </div>
                     ))}
                 </div>

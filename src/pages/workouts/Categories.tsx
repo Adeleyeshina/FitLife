@@ -11,8 +11,8 @@ const Categories = () => {
                       <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-linear-to-br ${category.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
                           <category.icon className="h-8 w-8 text-white" />
                       </div>
-                      <div className="text-xl font-semibold leading-none tracking-tight">{category.name}</div>
-                      <div className='text-sm text-muted-foreground'>{category.count} workouts</div>
+                      <p className="text-xl font-semibold leading-none tracking-tight">{category.name}</p>
+                      <p className='text-sm text-muted-foreground'>{category.count} workouts</p>
                   </div>
               </div>
           ))}

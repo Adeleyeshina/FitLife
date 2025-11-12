@@ -13,29 +13,29 @@ const DailyGoal = () => {
                   <div className="rounded-xl bg-card text-card-foreground shadow">
                       <div className="pb-2 flex flex-col space-y-1.5 p-6">
                           <Flame className="h-8 w-8 text-primary mx-auto mb-2" />
-                          <div className="text-3xl font-semibold leading-none tracking-tight">2,200</div>
-                          <div className="text-sm text-muted-foreground">Calories</div>
+                          <p className="text-3xl font-semibold leading-none tracking-tight">2,200</p>
+                          <p className="text-sm text-muted-foreground">Calories</p>
                       </div>
                   </div>
                   <div className="rounded-xl bg-card text-card-foreground shadow">
                       <div className="pb-2 flex flex-col space-y-1.5 p-6">
                           <Beef className="h-8 w-8 text-primary mx-auto mb-2" />
-                          <div className="text-3xl font-semibold leading-none tracking-tight">165g</div>
-                          <div className="text-sm text-muted-foreground">Protein</div>
+                          <p className="text-3xl font-semibold leading-none tracking-tight">165g</p>
+                          <p className="text-sm text-muted-foreground">Protein</p>
                       </div>
                   </div>
                   <div className="rounded-xl bg-card text-card-foreground shadow">
                       <div className="pb-2 flex flex-col space-y-1.5 p-6">
                           <Pizza className="h-8 w-8 text-primary mx-auto mb-2" />
-                          <div className="text-3xl font-semibold leading-none tracking-tight">220g</div>
-                          <div className="text-sm text-muted-foreground">Carbs</div>
+                          <p className="text-3xl font-semibold leading-none tracking-tight">220g</p>
+                          <p className="text-sm text-muted-foreground">Carbs</p>
                       </div>
                   </div>
                   <div className="rounded-xl bg-card text-card-foreground shadow">
                       <div className="pb-2 flex flex-col space-y-1.5 p-6">
                           <Salad className="h-8 w-8 text-primary mx-auto mb-2" />
-                          <div className="text-3xl font-semibold leading-none tracking-tight">73g</div>
-                          <div className="text-sm text-muted-foreground">Fats</div>
+                          <p className="text-3xl font-semibold leading-none tracking-tight">73g</p>
+                          <p className="text-sm text-muted-foreground">Fats</p>
                       </div>
                   </div>
               </div>

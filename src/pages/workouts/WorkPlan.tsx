@@ -31,21 +31,21 @@ const WorkPlan = () => {
                   {plan.level}
                 </Badge>
               </div>
-              <div className="text-xl mb-2 group-hover:text-primary transition-colors font-semibold leading-none tracking-tight">
+              <h3 className="text-xl mb-2 group-hover:text-primary transition-colors font-semibold leading-none tracking-tight">
                 {plan.title}
-              </div>
-              <div className="text-sm text-muted-foreground">{plan.description}</div>
+              </h3>
+              <p className="text-sm text-muted-foreground">{plan.description}</p>
             </div>
             <div className="space-y-4 p-6 pt-0">
               <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <p className="flex items-center gap-2 text-muted-foreground">
                   <Calendar className="h-4 w-4" />
                   {plan.duration}
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                </p>
+                <p className="flex items-center gap-2 text-muted-foreground">
                   <Clock className="h-4 w-4" />
                   {plan.workouts} workouts
-                </div>
+                </p>
               </div>
 
               {plan.progress > 0 && (

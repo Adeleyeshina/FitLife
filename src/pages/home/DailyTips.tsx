@@ -14,7 +14,7 @@ const DailyTips = () => {
                             </div>
                             <Badge className="border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80">Daily Fitness Tip</Badge>
                         </div>
-                        <div className="text-2xl font-semibold leading-none tracking-tight">Stay Hydrated Throughout Your Workout</div>
+                        <p className="text-2xl font-semibold leading-none tracking-tight">Stay Hydrated Throughout Your Workout</p>
                     </div>
                     <div className="p-6 pt-0">
                         <p className="text-lg text-muted-foreground">

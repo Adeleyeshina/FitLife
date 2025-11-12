@@ -27,30 +27,30 @@ const MealPlan = () => {
                                   {meal.difficulty}
                               </Badge>
                           </div>
-                          <div className="text-xl mb-2 group-hover:text-primary transition-colors font-semibold leading-none tracking-tight">
+                          <h3 className="text-xl mb-2 group-hover:text-primary transition-colors font-semibold leading-none tracking-tight">
                               {meal.name}
-                          </div>
-                          <div className='text-sm text-muted-foreground'>{meal.description}</div>
+                          </h3>
+                          <p className='text-sm text-muted-foreground'>{meal.description}</p>
                       </div>
                       <div className="space-y-4 p-6 pt-0">
                           {/* Macros */}
                           <div className="bg-secondary/50 rounded-lg p-4">
                               <div className="grid grid-cols-4 gap-2 text-center">
                                   <div>
-                                      <div className="text-2xl font-bold text-primary">{meal.calories}</div>
-                                      <div className="text-xs text-muted-foreground">Calories</div>
+                                      <p className="text-2xl font-bold text-primary">{meal.calories}</p>
+                                      <p className="text-xs text-muted-foreground">Calories</p>
                                   </div>
                                   <div>
-                                      <div className="text-2xl font-bold">{meal.protein}g</div>
-                                      <div className="text-xs text-muted-foreground">Protein</div>
+                                      <p className="text-2xl font-bold">{meal.protein}g</p>
+                                      <p className="text-xs text-muted-foreground">Protein</p>
                                   </div>
                                   <div>
-                                      <div className="text-2xl font-bold">{meal.carbs}g</div>
-                                      <div className="text-xs text-muted-foreground">Carbs</div>
+                                      <p className="text-2xl font-bold">{meal.carbs}g</p>
+                                      <p className="text-xs text-muted-foreground">Carbs</p>
                                   </div>
                                   <div>
-                                      <div className="text-2xl font-bold">{meal.fats}g</div>
-                                      <div className="text-xs text-muted-foreground">Fats</div>
+                                      <p className="text-2xl font-bold">{meal.fats}g</p>
+                                      <p className="text-xs text-muted-foreground">Fats</p>
                                   </div>
                               </div>
                           </div>

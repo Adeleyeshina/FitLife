@@ -1,11 +1,12 @@
-import { Apple, Award, Beef, Coffee, Dumbbell, Flame, Heart, Target, TrendingUp, Users, UtensilsCrossed, Zap } from "lucide-react";
+import { Apple, Award, Beef, Coffee, Dumbbell, Flame, Heart, Target, TrendingDown, TrendingUp, Users, UtensilsCrossed, Zap } from "lucide-react";
+import type { PostProps } from "./types";
 
 export const navLinks = [
-    {title : "Home", path : "/"},
-    {title : "Workouts", path : "/workouts"},
-    {title : "Meal Plans", path : "/meal"},
-    {title : "Progress", path : "/progress"},
-    {title : "Community", path : "/community"},
+    { title: "Home", path: "/" },
+    { title: "Workouts", path: "/workouts" },
+    { title: "Meal Plans", path: "/meal" },
+    { title: "Progress", path: "/progress" },
+    { title: "Community", path: "/community" },
 ]
 
 export const stats = [
@@ -196,4 +197,116 @@ export const mealPlans = [
         description: 'Colorful vegetables stir-fried with brown rice and teriyaki sauce',
         tags: ['Vegan', 'Low-Calorie']
     }
+];
+
+// --------------------------Progress----------------------------------------
+export const weightData = [
+    { date: 'Week 1', weight: 185 },
+    { date: 'Week 2', weight: 183 },
+    { date: 'Week 3', weight: 181 },
+    { date: 'Week 4', weight: 180 },
+    { date: 'Week 5', weight: 178 },
+    { date: 'Week 6', weight: 176 },
+    { date: 'Week 7', weight: 175 },
+    { date: 'Week 8', weight: 173 }
+];
+
+export const workoutData = [
+    { day: 'Mon', calories: 420 },
+    { day: 'Tue', calories: 380 },
+    { day: 'Wed', calories: 450 },
+    { day: 'Thu', calories: 390 },
+    { day: 'Fri', calories: 480 },
+    { day: 'Sat', calories: 520 },
+    { day: 'Sun', calories: 350 }
+];
+
+export const progress_stats = [
+    {
+        title: 'Weight Lost',
+        value: '12 lbs',
+        change: '-6.5%',
+        trend: 'down',
+        icon: TrendingDown,
+        color: 'text-primary'
+    },
+    {
+        title: 'Workouts This Week',
+        value: '5/7',
+        change: '+2 from last week',
+        trend: 'up',
+        icon: Dumbbell,
+        color: 'text-chart-2'
+    },
+    {
+        title: 'Calories Burned',
+        value: '2,990',
+        change: '+15%',
+        trend: 'up',
+        icon: Flame,
+        color: 'text-chart-3'
+    },
+    {
+        title: 'Current Streak',
+        value: '12 days',
+        change: 'Personal best!',
+        trend: 'up',
+        icon: Award,
+        color: 'text-chart-4'
+    }
+];
+
+export const achievements = [
+    { name: 'First Week Complete', unlocked: true, date: '2 weeks ago' },
+    { name: '10 Workouts Milestone', unlocked: true, date: '1 week ago' },
+    { name: '5 lbs Lost', unlocked: true, date: '5 days ago' },
+    { name: '1 Month Streak', unlocked: false, date: 'Locked' },
+    { name: '50 Workouts Total', unlocked: false, date: 'Locked' },
+    { name: 'Goal Weight Achieved', unlocked: false, date: 'Locked' }
+];
+
+export const posts : Array<PostProps> = [
+    {
+        user: { name: 'Sarah Johnson', avatar: '', initials: 'SJ', badge: 'Pro Member' },
+        timestamp: '2 hours ago',
+        content: 'Just completed my first 5K run! 🎉 Never thought I could do it, but FitLife helped me get here. Feeling amazing!',
+        image: '',
+        likes: 24,
+        comments: 8,
+        achievement: 'First 5K Complete'
+    },
+    {
+        user: { name: 'Mike Chen', avatar: '', initials: 'MC', badge: 'Trainer' },
+        timestamp: '5 hours ago',
+        content: 'Quick tip for everyone: Don\'t skip your warm-up! It makes a HUGE difference in preventing injuries and improving performance. Stay safe out there! 💪',
+        image: '',
+        likes: 42,
+        comments: 15,
+        achievement: null
+    },
+    {
+        user: { name: 'Emma Davis', avatar: '', initials: 'ED', badge: 'Active' },
+        timestamp: '1 day ago',
+        content: 'Before and after - 3 months with FitLife! Consistency is key. Thank you to this amazing community for keeping me motivated! 🔥',
+        image: '',
+        likes: 156,
+        comments: 32,
+        achievement: '3 Month Milestone'
+    },
+    {
+        user: { name: 'Alex Martinez', avatar: '', initials: 'AM', badge: 'Pro Member' },
+        timestamp: '1 day ago',
+        content: 'Hit a new personal record on bench press today! 225 lbs! Small victories lead to big changes. Keep pushing! 💯',
+        image: '',
+        likes: 67,
+        comments: 19,
+        achievement: 'New PR'
+    }
+];
+
+export const topMembers = [
+    { name: 'Jessica Lee', workouts: 124, streak: 45, initials: 'JL' },
+    { name: 'David Park', workouts: 98, streak: 32, initials: 'DP' },
+    { name: 'Rachel Green', workouts: 87, streak: 28, initials: 'RG' },
+    { name: 'Tom Wilson', workouts: 76, streak: 21, initials: 'TW' }
 ];
