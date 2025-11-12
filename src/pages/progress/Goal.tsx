@@ -1,5 +1,6 @@
-import { Award, Badge, Target } from "lucide-react"
+import { Award,  Target } from "lucide-react"
 import { achievements } from "../../constant/data"
+import Badge from "../../components/ui/Badge"
 
 
 const Goal = () => {
