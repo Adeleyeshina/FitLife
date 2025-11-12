@@ -1,12 +1,20 @@
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Dumbbell, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { navLinks } from '../../constant/data';
 import Button from '../ui/Button';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navigate = useNavigate()
+  const {pathname} = useLocation()
+  
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false)
+    }
+  }, [pathname])
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
@@ -22,7 +30,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="">
-            <ul className='hidden md:flex items-center gap-8'>
+            <ul className='hidden lg:flex items-center gap-8'>
               {
                 navLinks.map(({ path, title }, index) => (
                   <li key={index}>
@@ -37,7 +45,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <Button
               className='hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2'
               onClick={() => navigate("/login")}
@@ -57,7 +65,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -65,7 +73,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col">
               <ul className='flex flex-col gap-4 text-center'>
                 {
